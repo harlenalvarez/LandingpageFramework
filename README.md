@@ -1,4 +1,4 @@
-# LandingpageFramework
+# Landingpage Framework
 Framework for creating Single Page Apps by reading json files that create the content.
 
 
