@@ -1,4 +1,9 @@
 <?php
+/**
+ * User: harlenalvarez
+ * Date: 11/6/15
+ * Time: 9:28 PM
+ */
 abstract class Controller
 {
 	protected $view;
