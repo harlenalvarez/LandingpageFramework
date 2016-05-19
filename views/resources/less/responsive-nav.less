@@ -1,0 +1,74 @@
+.navbar-brand {
+    padding: 0px !important; /* firefox bug fix */
+
+    img{
+        height: 100% !important;
+        padding: 0px !important; /* firefox bug fix */
+        width: auto !important;
+    }
+}
+
+
+
+
+
+.ddm() when (@dropDown) {
+    > .dropdown-menu {
+        background-color: @nav-background;
+        > li > a {
+            color: @nav-color;
+            &:hover,  &:focus {
+                color: @nav-active-color;
+                background-color: @nav-active-background; }}
+        .divider {
+            background-color: @nav-active-background;}}}
+.navbar-default {
+    background-color: @nav-background;
+    border-color: @borderColor;
+    .navbar-brand {
+        color: @nav-color;
+        &:hover, &:focus {
+            color: @nav-active-color; }}
+    .navbar-text {
+        color: @nav-color; }
+    .navbar-nav {
+        > li {
+            > a {
+                color: @nav-color;
+                &:hover,  &:focus {
+                    color: @nav-active-color; }}
+            .ddm }
+        > .active {
+            > a, > a:hover, > a:focus {
+                color: @nav-active-color;
+                background-color: @nav-active-background; }}
+        > .open {
+            > a, > a:hover, > a:focus {
+                color: @nav-active-color;
+                background-color: @nav-active-background; }}}
+    .navbar-toggle {
+        border-color: @borderColor;
+        &:hover, &:focus {
+            background-color: @nav-active-background; }
+        .icon-bar {
+            background-color: @nav-color; }}
+    .navbar-collapse,
+    .navbar-form {
+        border-color: @borderColor; }
+    .navbar-link {
+        color: @nav-color;
+        &:hover {
+            color: @nav-active-color; }}}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu {
+        > li > a {
+            color: @nav-color;
+            &:hover, &:focus {
+                color: @nav-active-color; }}
+        > .active {
+            > a, > a:hover, > a:focus {
+                color: @nav-active-color;
+                background-color: @nav-active-background; }}}
+}
+
+

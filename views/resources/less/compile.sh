@@ -1,0 +1,1 @@
+lessc style.less ../css/style.min.css --clean-css="--s1 --advanced --compatibility=ie8"

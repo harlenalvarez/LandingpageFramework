@@ -1,0 +1,9 @@
+{
+  "name":"Name to appear on email",
+  "email":"email@address.com",
+  "username":"username",
+  "password":"password",
+  "host":"smtp.gmail.com",
+  "port":"465"
+
+}

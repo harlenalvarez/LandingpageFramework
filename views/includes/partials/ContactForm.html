@@ -1,0 +1,46 @@
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#cForm").submit(function(event){
+            event.preventDefault();
+            var from    = $("#fromInput").val();
+            var email   = $("#emailInput").val();
+            var msg     = $("#emailMessage").val();
+            $.ajax({
+                type:"POST",
+                url:"../model_control/contactForm",
+                data:{"fromName":from,"fromEmail":email,"emailMsg":msg},
+                cache:false,
+                success: function(data){
+                    $("#contactFormResult").html(data);
+                    if($("#contactFormResult").find("div.alert-success").length != 0){
+                        $("#fromInput").val("");
+                        $("#emailInput").val("");
+                        $("#emailMessage").val("");
+                    }
+                },
+                error:   function(data){$("#contactFormResult").html(data);}
+            });
+        });
+    });
+</script>
+<div id="contactFormResult"></div>
+<form id="cForm">
+    <table class="form-table">
+        <tr>
+            <td><label for="fromInput" class="control-label">From</label></td>
+            <td><input type="text" class="form-control" id="fromInput" placeholder="Enter Yor Name" required/></td>
+        </tr>
+        <tr>
+            <td><label for="emailInput" class="control-label">Email</label></td>
+            <td><input type="email" class="form-control" id="emailInput" placeholder="Enter Your Email" required/> </td>
+        </tr>
+    </table>
+    <br/>
+    Message
+    <textarea class="form-control" id="emailMessage" rows="5"></textarea>
+    <br/>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" name="submitButton" value="Send Message"/>
+    </div>
+    
+</form>

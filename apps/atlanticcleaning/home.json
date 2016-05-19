@@ -1,0 +1,149 @@
+{
+  "title":"Atlantic Cleaning",
+  "logo":"QAPAQ.png",
+  "keywords":"Cleaning, Painting, Maid Service, Deep Cleaning, Residential Cleaning, Commercial Cleaning, Carpet Cleaning",
+  "description":"",
+  "phone":"813-476-8355",
+  "address":"6936 W Linebaugh Ave #102,Tampa,FL,33625",
+  "showMap":true,
+  "construction":false,
+  "maintenance":false,
+  "alert":false,
+  "alertMessage":"",
+  "mainslide":{
+    "slideshow_name":"mainslide",
+    "autoplay":"true",
+    "interval":6000,
+    "arrows":"false",
+    "pauseOnHover":"false",
+    "fade":"true",
+    "speed":5000,
+    "slides":[
+      {
+        "path":"GranolaIngridients.jpg",
+        "alt":"Quiona Ingridients",
+        "caption":"",
+        "button":false,
+        "bText":"",
+        "bLink":""
+      },
+      {
+        "path":"wanderer.jpg",
+        "alt":"Man Hiking",
+        "caption":"",
+        "button":false,
+        "bText":"",
+        "bLink":""
+      }
+    ],
+    "slides_caption":"<div class='slides-caption-wrapper'><div class='slides-caption'><p>Tasty and Healthy organic foods from Peru.<br/>Treat your body with love.<br/>Call now to order 813-476-8355</p></div></div>",
+    "slides_button":""
+  },
+  "sections":[
+    {
+      "type":"information_panels",
+      "ID":"InfoPanels",
+      "display":"Products",
+      "icon":"shopping-bag",
+      "element":[
+        {
+          "img":"QAPAQ.png",
+          "alt":"QAPAQ",
+          "information":"<h3>Superfoods Retailer</h3><p>Qapaq is a and organic and kosher wholesale food supplier.  You offer your customers a healthier choice and we will keep up with the demands. Call us now for more information on bluk orders.<br/><tel>813-476-8355</tel> "
+        },
+        {
+          "img":"cerealBar.jpg",
+          "alt":"Cereal Bars",
+          "information":"<h3>Quinoa Cereal Bars</h3><p>Delicious and healthy cereal bars made from quinoa, geat source of essential aminoacids, and purple corn that contributes antioxidant properties. Enjoy this var free of sugar and sweetened with yacon syrup</p>"
+        },
+        {
+          "img":"quinoa-man.jpg",
+          "alt":"Quinoa health benefits",
+          "information":"<h3>Health Benefits</h3><p><ul><li>Considered to be a highly nutritional food.</li><li>Prevents cardiovascular problems.</li><li>Controls blood pressure.</li><li>Helps control weight</li><li>Provides high levels of fiber.</li></ul></p>"
+        }
+      ]
+    },
+    {
+      "type":"division",
+      "ID":"division1",
+      "display":"",
+      "html":"<h3>Nutritios and Delicious</h3>"
+    },
+    {
+      "type":"floating_information",
+      "ID":"productInformation",
+      "display":"Ingredients",
+      "element":[
+        {
+          "header":"Cerial Bars",
+          "img":"cerealBar.jpg",
+          "alt":"Cereal Bar",
+          "content":"Delicious and healthy cereal bars made from quinoa, great source of essential amino acids, and purple corn that contributes antioxidant properties. Enjoy this bar free of sugar and sweetened with yacon syrup."
+        },
+        {
+          "header":"Cacao Power",
+          "img":"cocoaPowder.jpg",
+          "alt":"Cocoa Powder",
+          "content":"Instant mix based on cacao, purple corn, quinoa and flavored with algarrobo. Try this highly nutritional blend anytime or at breakfast to boost your day."
+        },
+        {
+          "header":"Purple Corn",
+          "img":"blueCornChips.jpg",
+          "alt":"Purple Corn Chips",
+          "content":"Discover a new way to enjoy your breakfast with our new and healthy version of flakes prepared from quinoa and naturally colored with purple corn’s anthocyanin."
+        }
+      ]
+
+    }
+
+
+  ],
+  "contact_information":[
+    {
+      "label":"",
+      "info":"<div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>QAPAQ SuperFoods</span></div>"
+    },
+    {
+      "label":"Address",
+      "info": "<div itemscope itemtype='http://schema.org/PostalAddress'><span itemprop='streetAddress'>6936 W Linebaugh Ave<br/>Suite 102</span><br/><span itemprop='addressLocality'>Tampa</span>,<span itemprop='addressRegion'> FL</span> <span itemprop='postalCode'> 33625</span></div>"
+    },
+    {
+      "label":"Phone",
+      "info":"<div itemscope itemtype='http://schema.org/Organization'><span itemprop='telephone'><tel>813-476-8355</tel></span</div>"
+    }
+  ],
+  "contact_form":[
+    {
+      "type":"text",
+      "required":true,
+      "label":"Name",
+      "model":"name",
+      "title":"Enter your name",
+      "validate":""
+    },
+    {
+      "type":"text",
+      "required":true,
+      "label":"Email",
+      "model":"email",
+      "validate":"isEmail",
+      "title":"Enter your email"
+    },
+    {
+      "type":"text",
+      "required":false,
+      "model":"phoneNumber",
+      "label":"Phone Number",
+      "validate":"isPhone",
+      "format":"phone",
+      "title":"Enter you phone number you would like us to contact you"
+    },
+    {
+      "type":"textarea",
+      "required":true,
+      "model":"comment",
+      "label":"Message",
+      "title":"Enter your comments"
+    }
+  ]
+}

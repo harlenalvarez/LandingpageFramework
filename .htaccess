@@ -1,0 +1,21 @@
+Options -Indexes
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond ^([^/]+)/?$ !^favicon\.ico
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+<Files "config/">
+    Order Deny,Allow
+    Deny from all
+</Files>
+<FilesMatch "\.(ttf|otf|woff)$">
+    <IfModule mod_headers.c>
+            Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>
+ <FilesMatch "\.(ico|flv|jpg|jpeg|png|gif|js|css)$">
+     <IfModule mod_expires.c>
+        ExpiresActive on
+        ExpiresDefault "access plus 3 hours"
+     </IfModule>
+ </FilesMatch>

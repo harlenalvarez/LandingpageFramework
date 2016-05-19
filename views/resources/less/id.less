@@ -1,0 +1,171 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 9, 2015, 11:48:44 AM
+    Author     : halvarez
+*/
+// Color variables (appears count calculates by raw css)
+@color0: #e8e8e8; // Appears 2 times
+@color1: #323233; // Appears 2 times
+@color2: #000000; // Appears 2 times
+
+// Width variables (appears count calculates by raw css)
+@width4: 75px; // Appears 2 times
+@width5: 100%; // Appears 3 times
+
+// Height variables (appears count calculates by raw css)
+@height1: 150px; // Appears 3 times
+
+#mainheader {
+	height: 125px;
+	margin:0 auto;
+	padding: 0 2.5em;
+	a {
+		color: @color2;
+		text-decoration: none;
+		&:visited {
+			color: @color2;
+			text-decoration: none;
+		}
+	}
+	img {
+		float: left;
+		height: 100px;
+		margin: 1px 5px 1px 1px;
+		width:auto;
+	}
+}
+#optionsHeader {
+	box-shadow: 0 0 0 0;
+	float:none;
+	margin: 0 auto;
+	width: 95%;
+}
+#companyInfoForm {
+}
+#accordionPanel {
+	min-width: 927px;
+	overflow: hidden;
+	width: @width5;
+}
+#chgPassWrapper {
+	display:none;
+	width: @width5;
+}
+#editPersonalSettingsView {
+	width: @width5;
+}
+#fakePage {
+	border:1px solid black;
+	line-height: 40px;
+	margin-top: 2px;
+	
+	div {
+		border:1px dashed lightgray;
+	}
+}
+#trashCan {
+	div {
+		border:1px dashed lightgray;
+	}
+}
+#returnMsg {
+	//height: 60px;
+}
+#contactSection1 {
+	margin: 1em;
+	padding: 3em;
+}
+#imagesControlsWrapper2 {
+}
+#links2 {
+	margin: 1em 0;
+	max-height: 450px;
+	min-height: @height1;
+	overflow: auto;
+}
+#links {
+	background-color: @color1;
+	color:white;
+	margin: 1em 0;
+	min-height: @height1;
+	overflow: auto;
+}
+#linksForSlide {
+	background-color: @color1;
+	color:white;
+	margin: 1em 0;
+	max-height: 500px;
+	min-height: @height1;
+	overflow: auto;
+}
+#slideshowWrapper>div {
+	height: auto;
+	width:@width4;
+}
+#slideshowWrapper {
+	div>img {
+		height: auto;
+		width:@width4;
+	}
+}
+#checkoutWrapper {
+	background-color: @color0;
+	padding: 10px;
+}
+#orderSummary {
+	background-color: @color0;
+	padding: 10px;
+}
+#checkoutWrapper>form {
+	background-color: white;
+}
+#socialMediaIcons {
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	padding: 0 5px;
+	position:absolute;
+	right: 1vw;
+	z-index: 10;
+}
+#pageModal{
+  .modal-dialog{
+	width:90vw !important;
+  }
+}
+
+#loadingModal{
+  .modal-dialog{
+	width:10vw;
+	height: 10vh;
+	border-radius: 3px;
+	top:40vh;
+	text-align: center;
+  }
+}
+@media all and (min-width:401px)
+{
+  #loadingModal{
+	.modal-dialog{
+	  width:100vw;
+	  height: 100vh;
+	  text-align: center;
+	}
+  }
+    #companyInfoForm{
+        width: 40em;
+    }
+}
+@media all and (min-width:1250px){
+    #companyInfoForm{
+        width: 60em;
+    }
+}
+@media all and (min-width:1676px){
+    #companyInfoForm{
+        width:auto;
+    }
+}
