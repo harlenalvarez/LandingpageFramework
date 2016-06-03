@@ -67,12 +67,12 @@ class ContactForm
         //$this->mail->Port = 587;
         $this->mail->CharSet = "UTF-8";
         $this->mail->SMTPAuth = true;
-        $this->mail->Username = "harlenalvarez@gmail.com"; //Grab UserName from db
-        $this->mail->Password = "halvarez18";              //Grab password from db
+        $this->mail->Username = "harlenalvarez@gmail.com"; //TODO Grab UserName from db
+        $this->mail->Password = "";              //TODO Grab password from db
         $this->mail->Host = "smtp.gmail.com";              //
         $this->mail->SMTPSecure = "tls";
-        $this->mail->From = "harlenalvarez@gmail.com";      //Grab email from db
-        $this->mail->FromName = "Harlen Alvarez";           //Grab Company Name from db or User Name
+        $this->mail->From = "harlenalvarez@gmail.com";      //TODO Grab email from db
+        $this->mail->FromName = "Harlen Alvarez";           //TODO Grab Company Name from db or User Name
         $this->mail->addAddress($to,$principalName);
        
         foreach ($ccList as $to => $email)
